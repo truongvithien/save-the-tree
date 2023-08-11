@@ -1,0 +1,268 @@
+// @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Comfortaa:400,600|Yeseva+One&subset=vietnamese');
+
+
+
+@mixin font0(){
+	font-family: 'Yeseva One', cursive;
+}
+
+@mixin font1(){
+	font-family: 'Comfortaa', cursive;
+}
+
+@mixin font2(){
+	font-family: 'Alegreya', serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	// height: 100vh;
+	overflow-x: hidden;
+	// background: ;
+
+	background: rgb(2,0,36);
+	background: radial-gradient(circle, #464646 20%, #111111 100%);
+
+	background: #000;
+
+	font-family: 'Noto Serif', serif; 
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+
+}
+
+#world {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+
+	&:after {
+		content: "";
+		display: block;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.1);
+	}
+}
+
+
+#content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1200px;
+	height: 6000px;
+	left: calc( 50% - 1200px / 2);
+}
+
+
+section {
+	position: relative;
+
+}
+
+h1 {
+	position: absolute;
+	top: 0;
+	@include font0;
+	font-size: 40px;
+	font-weight: 400;
+	color: #fff;
+}
+
+nav {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	ul {
+		display: block;
+		padding: 0;
+		li {
+			list-style-type: none;
+			display: inline-block;
+			margin: 0 20px;
+			a {
+				position: relative;
+				@include font1;
+				transition: 0.2s;
+				padding: 5px 0;
+				top: 0;
+				&:after {
+					content: "";
+					display: block;
+					width: 0;
+					height: 2px;
+					position: absolute;
+					bottom: -10;
+					left: 0;
+					background: #fff;
+					transition: 0.2s;
+				}
+				&:hover {
+					top: -5px;
+					&:after {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+h2 {
+	display: block;
+	position: absolute;
+	right: calc(50% + 5px);
+	top: 60px;
+
+	@include font0;
+	font-size: 90px;
+	color: #fff;
+	font-weight: 300;
+
+	text-align: right;
+}
+
+p {
+	display: block;
+	position: absolute;
+	z-index: -1;
+
+	left: calc(50% + 5px);
+	top: 500px;
+	width: 500px;
+	color: #fff;
+	&.h2-sub {
+		text-align: justify;
+		@include font1;
+		font-size: 15px;
+		line-height: 20px;
+
+	}
+}
+
+a {
+	&.water {
+		position: absolute;
+		width: 160px;
+		line-height: 30px;
+		padding: 10px 0;
+		text-align: center;
+		left: calc(50% - 160px /2);
+		top: 760px;
+		@include font1;
+		background: #fff;
+		// color: #111;
+		z-index: 9;
+		color: #01739D;
+
+		border-radius: 99px;
+		&:before, &:after {
+			position: absolute;
+			z-index: -1;
+			content: "";
+			display: block;
+			background: #fff;
+			border-radius: 99px;
+
+		}
+
+		&:before {
+			top: -30px;
+			left: 0;
+			width: 100px;
+			height: 100px;
+
+		}
+
+		&:after {
+			bottom: -10px;
+			left: calc(50% - 220px/2);
+			width: 220px;
+			height: 60px;
+
+		}
+	}
+}
+
+div.path-a {
+	background: #3BB8FF;
+	width: 500px;
+	height: 1px;
+
+	transform: rotate(50deg);
+
+	position: absolute;
+	top: 300px;
+	left: 0px;
+}
+
+div.path-b {
+	background: #60E33D;
+	width: 100px;
+	height: 1px;
+
+	transform: rotate(120deg);
+
+	position: absolute;
+	top: 300px;
+	right: 200px;
+}
+
+div.path-c {
+	background: #F5A72D;
+	width: 20px;
+	height: 10px;
+
+	transform: rotate(-40deg);
+
+	position: absolute;
+	top: 300px;
+	left: calc( 50% - 300px);
+}
+
+
+h3 {
+	display: block;
+	position: absolute;
+	width: 800px;
+
+	@include font1;
+	font-size: 60px;
+	color: #fff;
+	font-weight: 300;
+
+	&.phase-1 {
+		text-align: center;
+		top: 1100px;
+		left: calc( 50% - 800px / 2);
+		text-shadow: 0 0 30px rgba(0,0,0,.1);
+	}
+
+	&.phase-2 {
+		text-align: left;
+		top: 2000px;
+		left: 20px;
+		text-shadow: 0 0 30px rgba(0,0,0,.1);
+	}
+
+	&.phase-3 {
+		text-align: right;
+		top: 3200px;
+		right: 20px;
+		text-shadow: 0 0 30px rgba(0,0,0,.1);
+	}
+}
+
+

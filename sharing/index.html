@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ThreeJS Example</title>
+
+        <link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css">
+        <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+
+
+        <link rel="stylesheet" href="css-full/landing.css">
+
+        <script defer src="../node_modules/@fortawesome/fontawesome-free/js/all.js" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+
+    	<div id="world"></div>
+
+        <div id="content">
+            <section class="header">
+                <h1 class="wow fadeInDown"><a href="#">Tinium</a></h1>
+
+                <nav>
+                    <ul>
+                        <li class="wow fadeInDown" data-wow-delay="0.2s">
+                            <a href="#">The first nav</a>
+                        </li>
+                        <li class="wow fadeInDown" data-wow-delay="0.4s">
+                            <a href="#">Second nav</a>
+                        </li>
+                        <li class="wow fadeInDown" data-wow-delay="0.6s">
+                            <a href="#">And the last one</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2  class="wow fadeInRight" data-wow-delay="0.8s">
+                    Quis<br>
+                    Sed<br>
+                    Vero<br>
+                    3 sagittis<br>
+                    Retes<br>
+                </h2>
+
+                <p class="h2-sub wow fadeInUp" data-wow-delay="1s">Phasellus ut metus et eros viverra elementum vitae eu lacus. Nullam porttitor vel ante quis hendrerit. Vestibulum purus massa, porttitor ac erat sit amet, posuere ultrices tellus. Nulla suscipit lobortis sapien et malesuada. Proin pellentesque vitae lectus sed sagittis. Nullam aliquam enim viverra massa convallis consequat. Maecenas ac lacinia nibh. Sed tristique sollicitudin purus nec sollicitudin. Ut tincidunt lorem efficitur pretium dignissim. Quisque porta, massa ac molestie accumsan, nibh risus tempus felis, id faucibus ante turpis et nibh. Aenean rutrum eget orci ac commodo. Integer eget faucibus leo, ac elementum leo. Aliquam erat volutpat. Vestibulum aliquam metus quis augue scelerisque condimentum. Nulla suscipit pellentesque luctus. Mauris vitae rutrum nibh.
+                </p>
+
+               <!--  <a class="water" href="#">
+                    water<br>
+                    me<br>
+                </a> -->
+
+                <div class="path-a"></div>
+                <div class="path-b"></div>
+                <div class="path-c"></div>
+
+
+            </section>
+
+            <section class="main">
+                <h3  class="phase-1 wow fadeInRight" data-wow-delay="0.1s">
+                    Mauris quis scelerisque felis efficitur
+                </h3>
+
+                <h3  class="phase-2 wow fadeInRight" data-wow-delay="0.1s">
+                    Aenean aliquam condimentum augue elementum
+                </h3>
+                
+                <h3  class="phase-3 wow fadeInRight" data-wow-delay="0.1s">
+                    Nullam enim lobortis eget erat
+                </h3>
+                
+            </section>
+        </div> 
+
+        <a style="display: none;" href="#" id="link"></a>
+
+    	<!-- JQUERY + ADDON -->
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/jquery-mousewheel/jquery.mousewheel.js"></script>
+		<script src="../node_modules/swiper/dist/js/swiper.min.js"></script>
+        <script src="../node_modules/wow.js/dist/wow.min.js"></script>
+
+        <!-- THREEJS SRC + PLUGIN -->
+        <script src="../node_modules/three/build/three.min.js"></script>
+        <script src="../node_modules/three/examples/js/WebGL.js"></script>
+        <script src="../node_modules/three/examples/js/controls/OrbitControls.js"></script>
+        <script src="../node_modules/three/examples/js/controls/MapControls.js"></script>
+        <script src="../node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
+        <script src="../node_modules/three/examples/js/exporters/GLTFExporter.js"></script>
+
+        <!-- THREEJS SETUP & OBJECTS --> 
+        <script src="js-full/variables.js"></script>
+        <script src="js-full/supports.js"></script>
+        <script src="js-full/main-setup.js"></script>
+        <script src="js-full/main-object.js"></script>
+        <script src="js-full/main-gltf.js"></script>
+
+        <!-- MAIN -->
+        <script src="js-full/main.js"></script>
+    </body>
+</html>
